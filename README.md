@@ -2,10 +2,9 @@
 
 E-commerce customer segmentation and product association analysis using SQL and Python on baseball equipment order data (from Alibaba Tianchi).
 Applied RFM, K-Means clustering, and Apriori algorithm. 
-Identified 0.19% high-value customers and 5 product communities, informing business strategy optimization.
-
-🇨🇳 中文说明指南：请您在上方仓库中点击README_CN.md，以阅读中文说明。
-
+Identified 0.19% high-value customers and 5 product communities, informing business strategy optimization.<br>
+<br>🇨🇳 中文说明指南：请您在上方仓库中点击README_CN.md，以阅读中文说明。<br>
+<br>![image](report/photos/ml_cluster_radar_240.png)<br>
 ## 1. Project Background
 
 This is my first personal project for job hunting. My initial goal was to demonstrate to local HR that I have mastered SQL and Python data analysis tools and possess a certain level of business intuition.
@@ -81,9 +80,20 @@ The focus of the machine learning script is customer segmentation and product as
 ## 6. Key Findings
 
 1. **High-value customers account for 0.19%**, while dormant customers make up 99.81%. However, due to the low-repurchase nature of the products, the current e-commerce model should be considered a **loyalty-based model**, and there is no urgent need to acquire new customers.
-    
-2. The top product combinations (*541-baseball glove → 530-baseball glove*; *540-baseball glove → 529-baseball glove*) have a **lift of 16.05**, strongly suggesting bundling opportunities.
-    
+
+|Cluster|Size (%)|Avg Recency (days)|Avg Frequency|Avg Monetary (¥)|
+|--------|----------|------|--------|--------|
+|Dormant Customers|99.81%|190.66|1.46|2023.02|
+|High Value Active|0.19%|18.51|19.77|40743.81|
+
+3. The top product combinations (*541-baseball glove → 530-baseball glove*; *540-baseball glove → 529-baseball glove*) have a **lift of 16.05**, strongly suggesting bundling opportunities.
+   
+|ante_ids_names|conseq_ids_names|support|confidence|lift|
+|--------|----------|------|--------|--------|
+|[530-棒球手套]|[541-棒球手套]|0.029256|0.543376|16.050221|
+|[541-棒球手套]|[530-棒球手套]|0.029256|0.864171|16.050221|
+|[540-棒球手套]|[529-棒球手套]|0.021544|0.695093|8.086391|
+|[539-棒球手套]|[529-棒球手套]|0.021942|0.654428|7.613304|
 
 ## 7. Business Recommendations
 
@@ -104,4 +114,4 @@ Based on the data analysis, we propose **five categories of actionable business 
 
 The copyright of the original data belongs to Alibaba Group (China). This project uses the data solely for learning and communication purposes, with authorization, and not for any commercial purpose. After downloading the original data, please delete it within 24 hours.
 
-The code files, their outputs, and the analysis reports are owned by the author, Alex Wang (@Alex-Wang10125). No one may use them for commercial purposes.
+The code files, their outputs, and the analysis reports are owned by the author, Alex Wang (@Alex-Wang10125). No one can use them for commercial purposes.
