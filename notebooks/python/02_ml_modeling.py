@@ -281,7 +281,7 @@ strong_rules = rules[(rules['lift'] > 2) & (rules['confidence'] > 0.6)]
 print("\n强规则数量:", len(strong_rules))
 
 # 打印示例时使用新的标识列
-print("示例（前5）:\n", rules[['ante_ids_names','conseq_ids_names','support','confidence','lift']].head())
+print("示例（前4）:\n", rules[['ante_ids_names','conseq_ids_names','support','confidence','lift']].head())
 
 # 2.6 产品网络图构建
 # (1) 构建产品共现矩阵（基于购物篮）
@@ -381,18 +381,5 @@ print(f"  - {os.path.join(PYEXPORT_DIR, 'ml_association_rules.csv')}")
 print(f"  - {os.path.join(PYEXPORT_DIR, 'ml_strong_rules.csv')}")
 print(f"  - {os.path.join(PYEXPORT_DIR, 'ml_product_communities.csv')}")
 
-
-
-# ==================== 业务建议简要输出 ====================
-print("\n" + "="*60)
-print("【业务建议摘要】")
-print("1. 客户分层运营：根据聚类结果，对高价值活跃客户推送新品，对沉睡客户发送唤醒优惠券。")
-print("2. 产品捆绑销售：基于强规则，例如 {} → {}，推出组合折扣。".format(
-    list(strong_rules.iloc[0]['ante_ids_names'])[:2] if len(strong_rules)>0 else '手套',
-    list(strong_rules.iloc[0]['conseq_ids_names'])[:2] if len(strong_rules)>0 else '球'
-))
-print("3. 货架优化：将同一社区的摆放相近，提升交叉购买。")
-print("4. 个性化推荐：根据客户历史购买，推荐同社区其他产品。")
-print("="*60)
 
 print("\n脚本执行完毕。")
