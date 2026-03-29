@@ -1,0 +1,19 @@
+//为取得最好效果，推荐您安装以下拓展：
+//
+{
+    "recommendations": [
+        "ms-python.python", // Python支持
+        "ms-python.vscode-pylance", // 类型检查
+        "ms-python.debugpy" ,//Python调试
+        "ms-python.vscode-python-envs",//Python环境管理
+        "ms-toolsai.jupyter", // Jupyter笔记本支持
+        "ms-toolsai.jupyter-renderers", // Jupyter数据可视化
+        "mtxr.sqltools",//SQL支持
+        "cweijan.vscode-mysql-client2", // MySQL支持
+        "mtxr.sqltools-driver-pg", // PostgreSQL驱动
+        "eamodio.gitlens", // Git增强
+        "usernamehw.errorlens", // 实时错误提示
+        "gruntfuggly.todo-tree", // TODO管理
+        "yzhang.markdown-all-in-one" // 用于离线编辑.md文件
+    ]
+}
