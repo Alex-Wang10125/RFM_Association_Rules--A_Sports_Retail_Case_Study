@@ -22,7 +22,7 @@ Unlike some data analysis/machine learning projects that simply focus on mining 
 |SQL Code|`notebook/sql`|`01_db_setup.sql`: data import script, creates database from raw data;  <br>`02_db_preprocess.sql`: preliminary statistics using database, generates views for Python|
 |Python Code|`notebook/python`|`01_exploratory_analysis.py`: aggregates data using SQL views, conducts preliminary analysis and visualization of common business metrics;  <br>`02_ml_modeling.py`: customer segmentation and product association analysis, generates business recommendations|
 |Reports|`report`|`photos`: all charts output from scripts;  <br>`report_cn.pdf`: Chinese analysis report;  <br>`report_en.pdf`: English analysis report (chart legends are in Chinese)|
-|Environment Info|repository root|`environment.txt`: project environment info;  <br>`extensions.json`: recommended VSCode extensions|
+|Environment Info|repository root|`requirements.txt`: python environment info;  <br>`extensions.json`: recommended VSCode extensions|
 |Documentation|repository root|`README.md`: English description;  <br>`README_CN.md`: Chinese description;  <br>`dinfo.md`: data dictionary|
 
 
