@@ -18,7 +18,7 @@
 |SQL 代码|`notebook/sql`|`01_db_setup.sql`：导入数据脚本，使用原始数据生成数据库；  <br>`02_db_preprocess.sql`：基于数据库进行初步统计，并生成供 Python 使用的数据视图|
 |Python 代码|`notebook/python`|`01_exploratory_analysis.py`：基于 SQL 视图进行数据聚合与初步分析，并对常见业务指标进行可视化；  <br>`02_ml_modeling.py`：基于数据视图进行客户分群与产品关联分析，生成业务建议|
 |报告|`report`|`photos`：所有脚本输出的统计图表；  <br>`report_cn.pdf`：中文分析报告；  <br>`report_en.pdf`：英文分析报告（图表图例为中文）|
-|环境信息|仓库根目录|`environment.txt`：项目环境信息；  <br>`extensions.json`：推荐的 VSCode 扩展|
+|环境信息|仓库根目录|`requirements.txt`：Python依赖列表；  <br>`extensions.json`：推荐的 VSCode 扩展|
 |说明文档|仓库根目录|`README.md`：英文说明；  <br>`README_CN.md`：中文说明；  <br>`dinfo.md`：数据变量词典|
 
 ## 3. 如何运行
