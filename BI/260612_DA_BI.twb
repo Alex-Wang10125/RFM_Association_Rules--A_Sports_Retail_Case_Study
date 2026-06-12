@@ -1,0 +1,2697 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20261.26.0512.1636                               -->
+<workbook original-version='18.1' source-build='2026.1.2 (20261.26.0512.1636)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+    <ZoneFriendlyName />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <style-theme name='classic' />
+  <datasources>
+    <datasource caption='ml_cluster_profile' inline='true' name='federated.10ylmi8016p38j1c20n2j1campn3' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='ml_cluster_profile' name='textscan.16fyb7s0gggtvk12jpltv072p8sd'>
+            <connection class='textscan' directory='D:/Projects/26.03_MySQL/database/pyexport' filename='ml_cluster_profile.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.16fyb7s0gggtvk12jpltv072p8sd' name='ml_cluster_profile.csv' table='[ml_cluster_profile#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='zh_CN' separator=','>
+            <column datatype='integer' name='cluster' ordinal='0' />
+            <column datatype='real' name='recency_days' ordinal='1' />
+            <column datatype='real' name='frequency' ordinal='2' />
+            <column datatype='real' name='monetary' ordinal='3' />
+            <column datatype='integer' name='size' ordinal='4' />
+            <column datatype='real' name='size_pct' ordinal='5' />
+            <column datatype='string' name='cluster_name' ordinal='6' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[ml_cluster_profile.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;zh_Hans_CN&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;¥&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;zh_CN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cluster</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[cluster]</local-name>
+            <parent-name>[ml_cluster_profile.csv]</parent-name>
+            <remote-alias>cluster</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ml_cluster_profile.csv_715E094281DA47C286F95782599DDCA7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>recency_days</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[recency_days]</local-name>
+            <parent-name>[ml_cluster_profile.csv]</parent-name>
+            <remote-alias>recency_days</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ml_cluster_profile.csv_715E094281DA47C286F95782599DDCA7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>frequency</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[frequency]</local-name>
+            <parent-name>[ml_cluster_profile.csv]</parent-name>
+            <remote-alias>frequency</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ml_cluster_profile.csv_715E094281DA47C286F95782599DDCA7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>monetary</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[monetary]</local-name>
+            <parent-name>[ml_cluster_profile.csv]</parent-name>
+            <remote-alias>monetary</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ml_cluster_profile.csv_715E094281DA47C286F95782599DDCA7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>size</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[size]</local-name>
+            <parent-name>[ml_cluster_profile.csv]</parent-name>
+            <remote-alias>size</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ml_cluster_profile.csv_715E094281DA47C286F95782599DDCA7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>size_pct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[size_pct]</local-name>
+            <parent-name>[ml_cluster_profile.csv]</parent-name>
+            <remote-alias>size_pct</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ml_cluster_profile.csv_715E094281DA47C286F95782599DDCA7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cluster_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[cluster_name]</local-name>
+            <parent-name>[ml_cluster_profile.csv]</parent-name>
+            <remote-alias>cluster_name</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <object-id>[ml_cluster_profile.csv_715E094281DA47C286F95782599DDCA7]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='ml_cluster_profile.csv' datatype='table' name='[__tableau_internal_object_id__].[ml_cluster_profile.csv_715E094281DA47C286F95782599DDCA7]' role='measure' type='quantitative' />
+      <column caption='Cluster' datatype='integer' name='[cluster]' role='measure' type='quantitative' />
+      <column caption='Cluster Name' datatype='string' name='[cluster_name]' role='dimension' type='nominal' />
+      <column caption='Frequency' datatype='real' name='[frequency]' role='measure' type='quantitative' />
+      <column caption='Monetary' datatype='real' name='[monetary]' role='measure' type='quantitative' />
+      <column caption='Recency Days' datatype='real' name='[recency_days]' role='measure' type='quantitative' />
+      <column caption='Size' datatype='integer' name='[size]' role='measure' type='quantitative' />
+      <column caption='Size Pct' datatype='real' name='[size_pct]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;中国&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='ml_cluster_profile.csv' id='ml_cluster_profile.csv_715E094281DA47C286F95782599DDCA7'>
+            <properties context=''>
+              <relation connection='textscan.16fyb7s0gggtvk12jpltv072p8sd' name='ml_cluster_profile.csv' table='[ml_cluster_profile#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='zh_CN' separator=','>
+                  <column datatype='integer' name='cluster' ordinal='0' />
+                  <column datatype='real' name='recency_days' ordinal='1' />
+                  <column datatype='real' name='frequency' ordinal='2' />
+                  <column datatype='real' name='monetary' ordinal='3' />
+                  <column datatype='integer' name='size' ordinal='4' />
+                  <column datatype='real' name='size_pct' ordinal='5' />
+                  <column datatype='string' name='cluster_name' ordinal='6' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='v_basket_detail.csv (多个连接)' inline='true' name='federated.0g28w3u15fkhma17esbgp19w8hrz' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='v_basket_detail' name='textscan.091cu971byf4eh17w1fq010h2bjr'>
+            <connection class='textscan' directory='D:/Projects/26.03_MySQL/database/sqlexport' filename='v_basket_detail.csv' password='' server='' />
+          </named-connection>
+          <named-connection caption='v_customer_features' name='textscan.0md7qpw1hmrc7q1fnq2xu1fcfvwt'>
+            <connection class='textscan' directory='D:/Projects/26.03_MySQL/database/sqlexport' filename='v_customer_features.csv' password='' server='' />
+          </named-connection>
+          <named-connection caption='ml_customer_with_cluster' name='textscan.115hg2r1g7yix01c0fs9t1snumuc'>
+            <connection class='textscan' directory='D:/Projects/26.03_MySQL/database/pyexport' filename='ml_customer_with_cluster.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation join='left' type='join'>
+          <clause type='join'>
+            <expression op='='>
+              <expression op='[v_customer_features.csv].[customer_id]' />
+              <expression op='[ml_customer_with_cluster.csv].[customer_id]' />
+            </expression>
+          </clause>
+          <relation join='left' type='join'>
+            <clause type='join'>
+              <expression op='='>
+                <expression op='[v_basket_detail.csv].[customer_id]' />
+                <expression op='[v_customer_features.csv].[customer_id]' />
+              </expression>
+            </clause>
+            <relation connection='textscan.091cu971byf4eh17w1fq010h2bjr' name='v_basket_detail.csv' table='[v_basket_detail#csv]' type='table'>
+              <columns character-set='UTF-8' header='yes' locale='zh_CN' separator=','>
+                <column datatype='string' name='basket_id' ordinal='0' />
+                <column datatype='string' name='customer_id' ordinal='1' />
+                <column datatype='date' name='order_date' ordinal='2' />
+                <column datatype='integer' name='product_id' ordinal='3' />
+                <column datatype='real' name='sales_amount' ordinal='4' />
+                <column datatype='string' name='sales_region_name' ordinal='5' />
+                <column datatype='string' name='product_category' ordinal='6' />
+                <column datatype='string' name='product_name' ordinal='7' />
+              </columns>
+            </relation>
+            <relation connection='textscan.0md7qpw1hmrc7q1fnq2xu1fcfvwt' name='v_customer_features.csv' table='[v_customer_features#csv]' type='table'>
+              <columns character-set='UTF-8' header='yes' locale='zh_CN' separator=','>
+                <column datatype='string' name='customer_id' ordinal='0' />
+                <column datatype='integer' name='recency_days' ordinal='1' />
+                <column datatype='integer' name='frequency' ordinal='2' />
+                <column datatype='real' name='monetary' ordinal='3' />
+                <column datatype='date' name='first_purchase_date' ordinal='4' />
+                <column datatype='date' name='last_purchase_date' ordinal='5' />
+                <column datatype='real' name='avg_order_value' ordinal='6' />
+                <column datatype='string' name='region' ordinal='7' />
+                <column datatype='integer' name='is_repeat_customer' ordinal='8' />
+              </columns>
+            </relation>
+          </relation>
+          <relation connection='textscan.115hg2r1g7yix01c0fs9t1snumuc' name='ml_customer_with_cluster.csv' table='[D:\Projects\26.03_MySQL\database\pyexport\ml_customer_with_cluster#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='zh_CN' separator=','>
+              <column datatype='string' name='customer_id' ordinal='0' />
+              <column datatype='integer' name='recency_days' ordinal='1' />
+              <column datatype='integer' name='frequency' ordinal='2' />
+              <column datatype='real' name='monetary' ordinal='3' />
+              <column datatype='integer' name='cluster' ordinal='4' />
+              <column datatype='string' name='cluster_name' ordinal='5' />
+            </columns>
+          </relation>
+        </relation>
+        <cols>
+          <map key='[avg_order_value]' value='[v_customer_features.csv].[avg_order_value]' />
+          <map key='[basket_id]' value='[v_basket_detail.csv].[basket_id]' />
+          <map key='[cluster]' value='[ml_customer_with_cluster.csv].[cluster]' />
+          <map key='[cluster_name]' value='[ml_customer_with_cluster.csv].[cluster_name]' />
+          <map key='[customer_id (ml_customer_with_cluster.csv)]' value='[ml_customer_with_cluster.csv].[customer_id]' />
+          <map key='[customer_id (v_customer_features.csv)]' value='[v_customer_features.csv].[customer_id]' />
+          <map key='[customer_id]' value='[v_basket_detail.csv].[customer_id]' />
+          <map key='[first_purchase_date]' value='[v_customer_features.csv].[first_purchase_date]' />
+          <map key='[frequency (ml_customer_with_cluster.csv)]' value='[ml_customer_with_cluster.csv].[frequency]' />
+          <map key='[frequency]' value='[v_customer_features.csv].[frequency]' />
+          <map key='[is_repeat_customer]' value='[v_customer_features.csv].[is_repeat_customer]' />
+          <map key='[last_purchase_date]' value='[v_customer_features.csv].[last_purchase_date]' />
+          <map key='[monetary (ml_customer_with_cluster.csv)]' value='[ml_customer_with_cluster.csv].[monetary]' />
+          <map key='[monetary]' value='[v_customer_features.csv].[monetary]' />
+          <map key='[order_date]' value='[v_basket_detail.csv].[order_date]' />
+          <map key='[product_category]' value='[v_basket_detail.csv].[product_category]' />
+          <map key='[product_id]' value='[v_basket_detail.csv].[product_id]' />
+          <map key='[product_name]' value='[v_basket_detail.csv].[product_name]' />
+          <map key='[recency_days (ml_customer_with_cluster.csv)]' value='[ml_customer_with_cluster.csv].[recency_days]' />
+          <map key='[recency_days]' value='[v_customer_features.csv].[recency_days]' />
+          <map key='[region]' value='[v_customer_features.csv].[region]' />
+          <map key='[sales_amount]' value='[v_basket_detail.csv].[sales_amount]' />
+          <map key='[sales_region_name]' value='[v_basket_detail.csv].[sales_region_name]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[v_basket_detail.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;zh_Hans_CN&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;¥&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;zh_CN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[v_customer_features.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;zh_Hans_CN&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;¥&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;zh_CN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[ml_customer_with_cluster.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;zh_Hans_CN&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;¥&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;zh_CN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>basket_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[basket_id]</local-name>
+            <parent-name>[v_basket_detail.csv]</parent-name>
+            <remote-alias>basket_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <object-id>[v_basket_detail.csv_D87E709601C241C09DCB49AAC18CF76B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>customer_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[customer_id]</local-name>
+            <parent-name>[v_basket_detail.csv]</parent-name>
+            <remote-alias>customer_id</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <object-id>[v_basket_detail.csv_D87E709601C241C09DCB49AAC18CF76B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>order_date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[order_date]</local-name>
+            <parent-name>[v_basket_detail.csv]</parent-name>
+            <remote-alias>order_date</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[v_basket_detail.csv_D87E709601C241C09DCB49AAC18CF76B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>product_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[product_id]</local-name>
+            <parent-name>[v_basket_detail.csv]</parent-name>
+            <remote-alias>product_id</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[v_basket_detail.csv_D87E709601C241C09DCB49AAC18CF76B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sales_amount</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[sales_amount]</local-name>
+            <parent-name>[v_basket_detail.csv]</parent-name>
+            <remote-alias>sales_amount</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[v_basket_detail.csv_D87E709601C241C09DCB49AAC18CF76B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sales_region_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[sales_region_name]</local-name>
+            <parent-name>[v_basket_detail.csv]</parent-name>
+            <remote-alias>sales_region_name</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <object-id>[v_basket_detail.csv_D87E709601C241C09DCB49AAC18CF76B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>product_category</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[product_category]</local-name>
+            <parent-name>[v_basket_detail.csv]</parent-name>
+            <remote-alias>product_category</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <object-id>[v_basket_detail.csv_D87E709601C241C09DCB49AAC18CF76B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>product_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[product_name]</local-name>
+            <parent-name>[v_basket_detail.csv]</parent-name>
+            <remote-alias>product_name</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <object-id>[v_basket_detail.csv_D87E709601C241C09DCB49AAC18CF76B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>customer_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[customer_id (v_customer_features.csv)]</local-name>
+            <parent-name>[v_customer_features.csv]</parent-name>
+            <remote-alias>customer_id</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <object-id>[v_basket_detail.csv_D87E709601C241C09DCB49AAC18CF76B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>recency_days</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[recency_days]</local-name>
+            <parent-name>[v_customer_features.csv]</parent-name>
+            <remote-alias>recency_days</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[v_basket_detail.csv_D87E709601C241C09DCB49AAC18CF76B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>frequency</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[frequency]</local-name>
+            <parent-name>[v_customer_features.csv]</parent-name>
+            <remote-alias>frequency</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[v_basket_detail.csv_D87E709601C241C09DCB49AAC18CF76B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>monetary</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[monetary]</local-name>
+            <parent-name>[v_customer_features.csv]</parent-name>
+            <remote-alias>monetary</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[v_basket_detail.csv_D87E709601C241C09DCB49AAC18CF76B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>first_purchase_date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[first_purchase_date]</local-name>
+            <parent-name>[v_customer_features.csv]</parent-name>
+            <remote-alias>first_purchase_date</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[v_basket_detail.csv_D87E709601C241C09DCB49AAC18CF76B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>last_purchase_date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[last_purchase_date]</local-name>
+            <parent-name>[v_customer_features.csv]</parent-name>
+            <remote-alias>last_purchase_date</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[v_basket_detail.csv_D87E709601C241C09DCB49AAC18CF76B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>avg_order_value</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[avg_order_value]</local-name>
+            <parent-name>[v_customer_features.csv]</parent-name>
+            <remote-alias>avg_order_value</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[v_basket_detail.csv_D87E709601C241C09DCB49AAC18CF76B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>region</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[region]</local-name>
+            <parent-name>[v_customer_features.csv]</parent-name>
+            <remote-alias>region</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <object-id>[v_basket_detail.csv_D87E709601C241C09DCB49AAC18CF76B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>is_repeat_customer</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[is_repeat_customer]</local-name>
+            <parent-name>[v_customer_features.csv]</parent-name>
+            <remote-alias>is_repeat_customer</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[v_basket_detail.csv_D87E709601C241C09DCB49AAC18CF76B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>customer_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[customer_id (ml_customer_with_cluster.csv)]</local-name>
+            <parent-name>[ml_customer_with_cluster.csv]</parent-name>
+            <remote-alias>customer_id</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <object-id>[v_basket_detail.csv_D87E709601C241C09DCB49AAC18CF76B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>recency_days</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[recency_days (ml_customer_with_cluster.csv)]</local-name>
+            <parent-name>[ml_customer_with_cluster.csv]</parent-name>
+            <remote-alias>recency_days</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[v_basket_detail.csv_D87E709601C241C09DCB49AAC18CF76B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>frequency</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[frequency (ml_customer_with_cluster.csv)]</local-name>
+            <parent-name>[ml_customer_with_cluster.csv]</parent-name>
+            <remote-alias>frequency</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[v_basket_detail.csv_D87E709601C241C09DCB49AAC18CF76B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>monetary</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[monetary (ml_customer_with_cluster.csv)]</local-name>
+            <parent-name>[ml_customer_with_cluster.csv]</parent-name>
+            <remote-alias>monetary</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[v_basket_detail.csv_D87E709601C241C09DCB49AAC18CF76B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cluster</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[cluster]</local-name>
+            <parent-name>[ml_customer_with_cluster.csv]</parent-name>
+            <remote-alias>cluster</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[v_basket_detail.csv_D87E709601C241C09DCB49AAC18CF76B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cluster_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[cluster_name]</local-name>
+            <parent-name>[ml_customer_with_cluster.csv]</parent-name>
+            <remote-alias>cluster_name</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <object-id>[v_basket_detail.csv_D87E709601C241C09DCB49AAC18CF76B]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='总订单数' datatype='integer' default-format='N' name='[Calculation_1388695002624000]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNTD([basket_id])' />
+      </column>
+      <column caption='总客户数' datatype='integer' default-format='N' name='[Calculation_1388695002787841]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNTD([customer_id])' />
+      </column>
+      <column caption='客单价' datatype='real' default-format='C2052%' name='[Calculation_1388695002882050]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([sales_amount])/COUNTD([basket_id])' />
+      </column>
+      <column caption='SKU数' datatype='integer' default-format='N' name='[Calculation_1388695004647427]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNTD([product_id])' />
+      </column>
+      <column caption='精确日期' datatype='datetime' name='[Calculation_1388695020838917]' role='dimension' type='ordinal'>
+        <calculation class='tableau' formula='DATETRUNC(&apos;month&apos;, [order_date])' />
+      </column>
+      <column caption='R值' datatype='integer' name='[Calculation_1388695024824326]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([recency_days])' />
+      </column>
+      <column caption='M值' datatype='real' name='[Calculation_1388695024951303]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([monetary])' />
+      </column>
+      <column caption='F值' datatype='integer' name='[Calculation_1388695025078280]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([frequency])' />
+      </column>
+      <column caption='散点-颜色' datatype='string' name='[Calculation_1388695025225737]' role='measure' type='nominal'>
+        <calculation class='tableau' formula='ATTR([cluster_name])' />
+      </column>
+      <column caption='散点-大小' datatype='integer' name='[Calculation_1388695025340426]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([frequency])' />
+      </column>
+      <column caption='散点-详细信息' datatype='string' name='[Calculation_1388695025422347]' role='measure' type='nominal'>
+        <calculation class='tableau' formula='ATTR([customer_id])' />
+      </column>
+      <column caption='Mapped_Province' datatype='string' name='[Calculation_1388695036698636]' role='dimension' semantic-role='[Country].[Name]' type='nominal'>
+        <calculation class='tableau' formula='CASE [sales_region_name]&#13;&#10;WHEN &apos;东北区&apos; THEN &apos;Liaoning&apos;&#13;&#10;WHEN &apos;东南区&apos; THEN &apos;Guangdong&apos;&#13;&#10;WHEN &apos;韩国&apos; THEN &apos;South Korea&apos;&#13;&#10;WHEN &apos;西北区&apos; THEN &apos;Shaanxi&apos;&#13;&#10;WHEN &apos;西南区&apos; THEN &apos;Sichuan&apos;&#13;&#10;WHEN &apos;新加坡&apos; THEN &apos;Singapore&apos;&#13;&#10;WHEN &apos;中部&apos; THEN &apos;Anhui&apos;&#13;&#10;WHEN &apos;中国澳门&apos; THEN &apos;Macao&apos;&#13;&#10;WHEN &apos;中国台湾&apos; THEN &apos;Taiwan&apos;&#13;&#10;WHEN &apos;中国香港&apos; THEN &apos;Hong Kong&apos;&#13;&#10;ELSE [sales_region_name]&#13;&#10;END' />
+        <semantic-values semantic-role='[Country].[Name]'>
+          <semantic-value key='&quot;Anhui&quot;' value='&quot;中国&quot;' />
+          <semantic-value key='&quot;Guangdong&quot;' value='&quot;中国&quot;' />
+          <semantic-value key='&quot;Liaoning&quot;' value='&quot;中国&quot;' />
+          <semantic-value key='&quot;Shaanxi&quot;' value='&quot;中国&quot;' />
+          <semantic-value key='&quot;Sichuan&quot;' value='&quot;中国&quot;' />
+        </semantic-values>
+      </column>
+      <column caption='总销售额' datatype='real' default-format='C2052%' name='[Calculation_1388695044698125]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([sales_amount])' />
+      </column>
+      <column caption='v_basket_detail.csv' datatype='table' name='[__tableau_internal_object_id__].[v_basket_detail.csv_D87E709601C241C09DCB49AAC18CF76B]' role='measure' type='quantitative' />
+      <column caption='Avg Order Value' datatype='real' name='[avg_order_value]' role='measure' type='quantitative' />
+      <column caption='Basket Id' datatype='string' name='[basket_id]' role='dimension' type='nominal' />
+      <column caption='Cluster' datatype='integer' name='[cluster]' role='measure' type='quantitative' />
+      <column caption='Cluster Name' datatype='string' name='[cluster_name]' role='dimension' type='nominal' />
+      <column caption='Customer Id (Ml Customer With Cluster.Csv)' datatype='string' name='[customer_id (ml_customer_with_cluster.csv)]' role='dimension' type='nominal' />
+      <column caption='Customer Id (V Customer Features.Csv)' datatype='string' name='[customer_id (v_customer_features.csv)]' role='dimension' type='nominal' />
+      <column caption='Customer Id' datatype='string' name='[customer_id]' role='dimension' type='nominal' />
+      <column caption='First Purchase Date' datatype='date' name='[first_purchase_date]' role='dimension' type='ordinal' />
+      <column caption='Frequency (Ml Customer With Cluster.Csv)' datatype='integer' name='[frequency (ml_customer_with_cluster.csv)]' role='measure' type='quantitative' />
+      <column caption='Frequency' datatype='integer' name='[frequency]' role='measure' type='quantitative' />
+      <column caption='Is Repeat Customer' datatype='integer' name='[is_repeat_customer]' role='measure' type='quantitative' />
+      <column caption='Last Purchase Date' datatype='date' name='[last_purchase_date]' role='dimension' type='ordinal' />
+      <column caption='Monetary (Ml Customer With Cluster.Csv)' datatype='real' name='[monetary (ml_customer_with_cluster.csv)]' role='measure' type='quantitative' />
+      <column caption='Monetary' datatype='real' name='[monetary]' role='measure' type='quantitative' />
+      <column caption='Order Date' datatype='date' name='[order_date]' role='dimension' type='ordinal' />
+      <column caption='Product Category' datatype='string' name='[product_category]' role='dimension' type='nominal' />
+      <column caption='Product Id' datatype='integer' name='[product_id]' role='dimension' type='ordinal' />
+      <column caption='Product Name' datatype='string' name='[product_name]' role='dimension' type='nominal' />
+      <column caption='Recency Days (Ml Customer With Cluster.Csv)' datatype='integer' name='[recency_days (ml_customer_with_cluster.csv)]' role='measure' type='quantitative' />
+      <column caption='Recency Days' datatype='integer' name='[recency_days]' role='measure' type='quantitative' />
+      <column caption='Region' datatype='string' name='[region]' role='dimension' type='nominal' />
+      <column caption='Sales Amount' datatype='real' default-format='C2052%' name='[sales_amount]' role='measure' type='quantitative' />
+      <column caption='Sales Region Name' datatype='string' name='[sales_region_name]' role='dimension' type='nominal' />
+      <column-instance column='[sales_amount]' derivation='Sum' name='[diff:sum:sales_amount:qk]' pivot='key' type='quantitative'>
+        <table-calc diff-options='Relative' ordering-type='Rows' type='Difference'>
+          <address>
+            <value>-1</value>
+          </address>
+        </table-calc>
+      </column-instance>
+      <column-instance column='[sales_amount]' derivation='None' name='[none:sales_amount:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[sales_region_name]' derivation='None' name='[none:sales_region_name:nk]' pivot='key' type='nominal' />
+      <column-instance column='[sales_amount]' derivation='Sum' name='[pcdf:sum:sales_amount:qk]' pivot='key' type='quantitative'>
+        <table-calc diff-options='Relative' ordering-field='[federated.0g28w3u15fkhma17esbgp19w8hrz].[Calculation_1388695036698636]' ordering-type='Field' type='PctDiff'>
+          <address>
+            <value>-1</value>
+          </address>
+        </table-calc>
+      </column-instance>
+      <column-instance column='[sales_amount]' derivation='Sum' name='[pcto:sum:sales_amount:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-field='[federated.0g28w3u15fkhma17esbgp19w8hrz].[Calculation_1388695036698636]' ordering-type='Field' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[Calculation_1388695044698125]' derivation='User' name='[pcto:usr:Calculation_1388695044698125:qk:1]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Field' type='PctTotal'>
+          <order field='[federated.09v3nxc1i7shu11a9m0od17055yi].[country_en]' />
+          <order field='[federated.09v3nxc1i7shu11a9m0od17055yi].[province_en]' />
+        </table-calc>
+      </column-instance>
+      <column-instance column='[Calculation_1388695044698125]' derivation='User' name='[pcto:usr:Calculation_1388695044698125:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-field='[federated.0g28w3u15fkhma17esbgp19w8hrz].[Calculation_1388695036698636]' ordering-type='Field' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[sales_amount]' derivation='Sum' name='[rank:sum:sales_amount:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-field='[federated.0g28w3u15fkhma17esbgp19w8hrz].[Calculation_1388695036698636]' ordering-type='Field' rank-options='Competition,Descending' type='Rank' />
+      </column-instance>
+      <column-instance column='[sales_amount]' derivation='Sum' name='[sum:sales_amount:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_1388695002624000]' derivation='User' name='[usr:Calculation_1388695002624000:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_1388695002787841]' derivation='User' name='[usr:Calculation_1388695002787841:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_1388695044698125]' derivation='User' name='[usr:Calculation_1388695044698125:qk]' pivot='key' type='quantitative' />
+      <drill-paths>
+        <drill-path name='Country En, Province En' />
+      </drill-paths>
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='zh_CN' class='hyper' dbname='D:/Projects/26.03_MySQL/v_basket_detail.csv.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='06/12/2026 04:47:05 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <cols>
+            <map key='[avg_order_value]' value='[Extract].[avg_order_value]' />
+            <map key='[basket_id]' value='[Extract].[basket_id]' />
+            <map key='[cluster]' value='[Extract].[cluster]' />
+            <map key='[cluster_name]' value='[Extract].[cluster_name]' />
+            <map key='[customer_id (ml_customer_with_cluster.csv)]' value='[Extract].[customer_id]' />
+            <map key='[customer_id (v_customer_features.csv)]' value='[Extract].[customer_id1]' />
+            <map key='[customer_id]' value='[Extract].[customer_id2]' />
+            <map key='[first_purchase_date]' value='[Extract].[first_purchase_date]' />
+            <map key='[frequency (ml_customer_with_cluster.csv)]' value='[Extract].[frequency]' />
+            <map key='[frequency]' value='[Extract].[frequency1]' />
+            <map key='[is_repeat_customer]' value='[Extract].[is_repeat_customer]' />
+            <map key='[last_purchase_date]' value='[Extract].[last_purchase_date]' />
+            <map key='[monetary (ml_customer_with_cluster.csv)]' value='[Extract].[monetary]' />
+            <map key='[monetary]' value='[Extract].[monetary1]' />
+            <map key='[order_date]' value='[Extract].[order_date]' />
+            <map key='[product_category]' value='[Extract].[product_category]' />
+            <map key='[product_id]' value='[Extract].[product_id]' />
+            <map key='[product_name]' value='[Extract].[product_name]' />
+            <map key='[recency_days (ml_customer_with_cluster.csv)]' value='[Extract].[recency_days]' />
+            <map key='[recency_days]' value='[Extract].[recency_days1]' />
+            <map key='[region]' value='[Extract].[region]' />
+            <map key='[sales_amount]' value='[Extract].[sales_amount]' />
+            <map key='[sales_region_name]' value='[Extract].[sales_region_name]' />
+          </cols>
+          <refresh>
+            <refresh-event add-from-file-path='v_basket_detail.csv (多个连接)' increment-value='%null%' refresh-type='create' rows-inserted='60398' timestamp-start='2026-06-12 16:47:04.394' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>basket_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[basket_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>basket_id</remote-alias>
+              <ordinal>0</ordinal>
+              <family>v_basket_detail.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>32876</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LZH_RCN' />
+              <object-id>[v_basket_detail.csv_D87E709601C241C09DCB49AAC18CF76B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>customer_id2</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[customer_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>customer_id2</remote-alias>
+              <ordinal>1</ordinal>
+              <family>v_basket_detail.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>19884</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LZH_RCN' />
+              <object-id>[v_basket_detail.csv_D87E709601C241C09DCB49AAC18CF76B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>order_date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[order_date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>order_date</remote-alias>
+              <ordinal>2</ordinal>
+              <family>v_basket_detail.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>1542</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[v_basket_detail.csv_D87E709601C241C09DCB49AAC18CF76B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>product_id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[product_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>product_id</remote-alias>
+              <ordinal>3</ordinal>
+              <family>v_basket_detail.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>285</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[v_basket_detail.csv_D87E709601C241C09DCB49AAC18CF76B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>sales_amount</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[sales_amount]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>sales_amount</remote-alias>
+              <ordinal>4</ordinal>
+              <family>v_basket_detail.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>35</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[v_basket_detail.csv_D87E709601C241C09DCB49AAC18CF76B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>sales_region_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[sales_region_name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>sales_region_name</remote-alias>
+              <ordinal>5</ordinal>
+              <family>v_basket_detail.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>13</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LZH_RCN' />
+              <object-id>[v_basket_detail.csv_D87E709601C241C09DCB49AAC18CF76B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>product_category</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[product_category]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>product_category</remote-alias>
+              <ordinal>6</ordinal>
+              <family>v_basket_detail.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LZH_RCN' />
+              <object-id>[v_basket_detail.csv_D87E709601C241C09DCB49AAC18CF76B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>product_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[product_name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>product_name</remote-alias>
+              <ordinal>7</ordinal>
+              <family>v_basket_detail.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>17</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LZH_RCN' />
+              <object-id>[v_basket_detail.csv_D87E709601C241C09DCB49AAC18CF76B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>customer_id1</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[customer_id (v_customer_features.csv)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>customer_id1</remote-alias>
+              <ordinal>8</ordinal>
+              <family>v_customer_features.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>19884</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LZH_RCN' />
+              <object-id>[v_basket_detail.csv_D87E709601C241C09DCB49AAC18CF76B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>recency_days1</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[recency_days]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>recency_days1</remote-alias>
+              <ordinal>9</ordinal>
+              <family>v_customer_features.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>926</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[v_basket_detail.csv_D87E709601C241C09DCB49AAC18CF76B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>frequency1</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[frequency]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>frequency1</remote-alias>
+              <ordinal>10</ordinal>
+              <family>v_customer_features.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>26</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[v_basket_detail.csv_D87E709601C241C09DCB49AAC18CF76B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>monetary1</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[monetary]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>monetary1</remote-alias>
+              <ordinal>11</ordinal>
+              <family>v_customer_features.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5292</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[v_basket_detail.csv_D87E709601C241C09DCB49AAC18CF76B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>first_purchase_date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[first_purchase_date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>first_purchase_date</remote-alias>
+              <ordinal>12</ordinal>
+              <family>v_customer_features.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>2763</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[v_basket_detail.csv_D87E709601C241C09DCB49AAC18CF76B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>last_purchase_date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[last_purchase_date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>last_purchase_date</remote-alias>
+              <ordinal>13</ordinal>
+              <family>v_customer_features.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>926</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[v_basket_detail.csv_D87E709601C241C09DCB49AAC18CF76B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>avg_order_value</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[avg_order_value]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>avg_order_value</remote-alias>
+              <ordinal>14</ordinal>
+              <family>v_customer_features.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5355</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[v_basket_detail.csv_D87E709601C241C09DCB49AAC18CF76B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>region</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[region]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>region</remote-alias>
+              <ordinal>15</ordinal>
+              <family>v_customer_features.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>13</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LZH_RCN' />
+              <object-id>[v_basket_detail.csv_D87E709601C241C09DCB49AAC18CF76B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>is_repeat_customer</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[is_repeat_customer]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>is_repeat_customer</remote-alias>
+              <ordinal>16</ordinal>
+              <family>v_customer_features.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[v_basket_detail.csv_D87E709601C241C09DCB49AAC18CF76B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>customer_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[customer_id (ml_customer_with_cluster.csv)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>customer_id</remote-alias>
+              <ordinal>17</ordinal>
+              <family>ml_customer_with_cluster.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>19884</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LZH_RCN' />
+              <object-id>[v_basket_detail.csv_D87E709601C241C09DCB49AAC18CF76B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>recency_days</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[recency_days (ml_customer_with_cluster.csv)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>recency_days</remote-alias>
+              <ordinal>18</ordinal>
+              <family>ml_customer_with_cluster.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>926</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[v_basket_detail.csv_D87E709601C241C09DCB49AAC18CF76B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>frequency</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[frequency (ml_customer_with_cluster.csv)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>frequency</remote-alias>
+              <ordinal>19</ordinal>
+              <family>ml_customer_with_cluster.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>26</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[v_basket_detail.csv_D87E709601C241C09DCB49AAC18CF76B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>monetary</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[monetary (ml_customer_with_cluster.csv)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>monetary</remote-alias>
+              <ordinal>20</ordinal>
+              <family>ml_customer_with_cluster.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5292</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[v_basket_detail.csv_D87E709601C241C09DCB49AAC18CF76B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>cluster</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[cluster]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>cluster</remote-alias>
+              <ordinal>21</ordinal>
+              <family>ml_customer_with_cluster.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[v_basket_detail.csv_D87E709601C241C09DCB49AAC18CF76B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>cluster_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[cluster_name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>cluster_name</remote-alias>
+              <ordinal>22</ordinal>
+              <family>ml_customer_with_cluster.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LZH_RCN' />
+              <object-id>[v_basket_detail.csv_D87E709601C241C09DCB49AAC18CF76B]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' rowDisplayCount='200' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#17becf'>
+              <bucket>&quot;[federated.0g28w3u15fkhma17esbgp19w8hrz].[diff:sum:sales_amount:qk]&quot;</bucket>
+            </map>
+            <map to='#17becf'>
+              <bucket>&quot;[federated.0g28w3u15fkhma17esbgp19w8hrz].[none:sales_amount:qk]&quot;</bucket>
+            </map>
+            <map to='#17becf'>
+              <bucket>&quot;[federated.0g28w3u15fkhma17esbgp19w8hrz].[none:sales_region_name:nk]&quot;</bucket>
+            </map>
+            <map to='#17becf'>
+              <bucket>&quot;[federated.0g28w3u15fkhma17esbgp19w8hrz].[pcdf:sum:sales_amount:qk]&quot;</bucket>
+            </map>
+            <map to='#17becf'>
+              <bucket>&quot;[federated.0g28w3u15fkhma17esbgp19w8hrz].[pcto:sum:sales_amount:qk]&quot;</bucket>
+            </map>
+            <map to='#17becf'>
+              <bucket>&quot;[federated.0g28w3u15fkhma17esbgp19w8hrz].[pcto:usr:Calculation_1388695044698125:qk:1]&quot;</bucket>
+            </map>
+            <map to='#17becf'>
+              <bucket>&quot;[federated.0g28w3u15fkhma17esbgp19w8hrz].[pcto:usr:Calculation_1388695044698125:qk]&quot;</bucket>
+            </map>
+            <map to='#17becf'>
+              <bucket>&quot;[federated.0g28w3u15fkhma17esbgp19w8hrz].[rank:sum:sales_amount:qk]&quot;</bucket>
+            </map>
+            <map to='#17becf'>
+              <bucket>&quot;[federated.0g28w3u15fkhma17esbgp19w8hrz].[sum:Calculation_1388695046844430:qk]&quot;</bucket>
+            </map>
+            <map to='#17becf'>
+              <bucket>&quot;[federated.0g28w3u15fkhma17esbgp19w8hrz].[sum:sales_amount:qk]&quot;</bucket>
+            </map>
+            <map to='#17becf'>
+              <bucket>&quot;[federated.0g28w3u15fkhma17esbgp19w8hrz].[usr:Calculation_1388695044698125:qk]&quot;</bucket>
+            </map>
+            <map to='#1f77b4'>
+              <bucket>&quot;[federated.0g28w3u15fkhma17esbgp19w8hrz].[usr:Calculation_1388695002787841:qk]&quot;</bucket>
+            </map>
+            <map to='#e377c2'>
+              <bucket>&quot;[federated.0g28w3u15fkhma17esbgp19w8hrz].[usr:Calculation_1388695002624000:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;中国&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='v_basket_detail.csv' id='v_basket_detail.csv_D87E709601C241C09DCB49AAC18CF76B'>
+            <properties context=''>
+              <relation join='left' type='join'>
+                <clause type='join'>
+                  <expression op='='>
+                    <expression op='[v_customer_features.csv].[customer_id]' />
+                    <expression op='[ml_customer_with_cluster.csv].[customer_id]' />
+                  </expression>
+                </clause>
+                <relation join='left' type='join'>
+                  <clause type='join'>
+                    <expression op='='>
+                      <expression op='[v_basket_detail.csv].[customer_id]' />
+                      <expression op='[v_customer_features.csv].[customer_id]' />
+                    </expression>
+                  </clause>
+                  <relation connection='textscan.091cu971byf4eh17w1fq010h2bjr' name='v_basket_detail.csv' table='[v_basket_detail#csv]' type='table'>
+                    <columns character-set='UTF-8' header='yes' locale='zh_CN' separator=','>
+                      <column datatype='string' name='basket_id' ordinal='0' />
+                      <column datatype='string' name='customer_id' ordinal='1' />
+                      <column datatype='date' name='order_date' ordinal='2' />
+                      <column datatype='integer' name='product_id' ordinal='3' />
+                      <column datatype='real' name='sales_amount' ordinal='4' />
+                      <column datatype='string' name='sales_region_name' ordinal='5' />
+                      <column datatype='string' name='product_category' ordinal='6' />
+                      <column datatype='string' name='product_name' ordinal='7' />
+                    </columns>
+                  </relation>
+                  <relation connection='textscan.0md7qpw1hmrc7q1fnq2xu1fcfvwt' name='v_customer_features.csv' table='[v_customer_features#csv]' type='table'>
+                    <columns character-set='UTF-8' header='yes' locale='zh_CN' separator=','>
+                      <column datatype='string' name='customer_id' ordinal='0' />
+                      <column datatype='integer' name='recency_days' ordinal='1' />
+                      <column datatype='integer' name='frequency' ordinal='2' />
+                      <column datatype='real' name='monetary' ordinal='3' />
+                      <column datatype='date' name='first_purchase_date' ordinal='4' />
+                      <column datatype='date' name='last_purchase_date' ordinal='5' />
+                      <column datatype='real' name='avg_order_value' ordinal='6' />
+                      <column datatype='string' name='region' ordinal='7' />
+                      <column datatype='integer' name='is_repeat_customer' ordinal='8' />
+                    </columns>
+                  </relation>
+                </relation>
+                <relation connection='textscan.115hg2r1g7yix01c0fs9t1snumuc' name='ml_customer_with_cluster.csv' table='[D:\Projects\26.03_MySQL\database\pyexport\ml_customer_with_cluster#csv]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='zh_CN' separator=','>
+                    <column datatype='string' name='customer_id' ordinal='0' />
+                    <column datatype='integer' name='recency_days' ordinal='1' />
+                    <column datatype='integer' name='frequency' ordinal='2' />
+                    <column datatype='real' name='monetary' ordinal='3' />
+                    <column datatype='integer' name='cluster' ordinal='4' />
+                    <column datatype='string' name='cluster_name' ordinal='5' />
+                  </columns>
+                </relation>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='KPI1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='v_basket_detail.csv (多个连接)' name='federated.0g28w3u15fkhma17esbgp19w8hrz' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0g28w3u15fkhma17esbgp19w8hrz'>
+            <column caption='总销售额' datatype='real' default-format='C2052%' name='[Calculation_1388695044698125]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([sales_amount])' />
+            </column>
+            <column caption='Sales Amount' datatype='real' default-format='C2052%' name='[sales_amount]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_1388695044698125]' derivation='User' name='[usr:Calculation_1388695044698125:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='color' value='#75a1c7' />
+            <format attr='border-width' value='0' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' scope='rows' value='1' />
+            <format attr='border-style' scope='rows' value='solid' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-align' scope='rows' value='left' />
+            <format attr='text-align' scope='cols' value='left' />
+            <format attr='vertical-align' scope='cols' value='bottom' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' value='1' />
+            <format attr='border-color' value='#4e79a7' />
+            <format attr='border-style' value='solid' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='line-pattern-only' scope='rows' value='dotted' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.0g28w3u15fkhma17esbgp19w8hrz].[usr:Calculation_1388695044698125:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run>总销售额&#10;</run>
+                <run><![CDATA[<[federated.0g28w3u15fkhma17esbgp19w8hrz].[usr:Calculation_1388695044698125:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='right' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='size' value='1.7251380681991577' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{3D58795A-6429-46E1-A4C3-F02DE9D9E9B9}' />
+    </worksheet>
+    <worksheet name='KPI2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='v_basket_detail.csv (多个连接)' name='federated.0g28w3u15fkhma17esbgp19w8hrz' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0g28w3u15fkhma17esbgp19w8hrz'>
+            <column caption='总订单数' datatype='integer' default-format='N' name='[Calculation_1388695002624000]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTD([basket_id])' />
+            </column>
+            <column caption='Basket Id' datatype='string' name='[basket_id]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_1388695002624000]' derivation='User' name='[usr:Calculation_1388695002624000:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='pane'>
+            <format attr='border-color' value='#4e79a7' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.0g28w3u15fkhma17esbgp19w8hrz].[usr:Calculation_1388695002624000:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run>总订单数&#10;&lt;</run>
+                <run>[federated.0g28w3u15fkhma17esbgp19w8hrz].[usr:Calculation_1388695002624000:qk]</run>
+                <run>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='size' value='1.6811602115631104' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{D4F71305-50A2-489D-8133-6D2CAD43A83D}' />
+    </worksheet>
+    <worksheet name='KPI3'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='v_basket_detail.csv (多个连接)' name='federated.0g28w3u15fkhma17esbgp19w8hrz' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0g28w3u15fkhma17esbgp19w8hrz'>
+            <column caption='总客户数' datatype='integer' default-format='N' name='[Calculation_1388695002787841]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTD([customer_id])' />
+            </column>
+            <column caption='Customer Id' datatype='string' name='[customer_id]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_1388695002787841]' derivation='User' name='[usr:Calculation_1388695002787841:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='border-color' value='#4e79a7' />
+            <format attr='border-width' value='0' />
+            <format attr='border-style' value='none' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-color' value='#4e79a7' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.0g28w3u15fkhma17esbgp19w8hrz].[usr:Calculation_1388695002787841:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run>总客户数&#10;&lt;</run>
+                <run>[federated.0g28w3u15fkhma17esbgp19w8hrz].[usr:Calculation_1388695002787841:qk]</run>
+                <run>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='size' value='1.7251380681991577' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{2C1C5CB9-28D5-49AB-90E6-8202B4ABA210}' />
+    </worksheet>
+    <worksheet name='KPI4'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='v_basket_detail.csv (多个连接)' name='federated.0g28w3u15fkhma17esbgp19w8hrz' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0g28w3u15fkhma17esbgp19w8hrz'>
+            <column caption='客单价' datatype='real' default-format='C2052%' name='[Calculation_1388695002882050]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([sales_amount])/COUNTD([basket_id])' />
+            </column>
+            <column caption='Basket Id' datatype='string' name='[basket_id]' role='dimension' type='nominal' />
+            <column caption='Sales Amount' datatype='real' default-format='C2052%' name='[sales_amount]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_1388695002882050]' derivation='User' name='[usr:Calculation_1388695002882050:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='pane'>
+            <format attr='border-color' value='#4e79a7' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.0g28w3u15fkhma17esbgp19w8hrz].[usr:Calculation_1388695002882050:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run>平均客单价&#10;&lt;</run>
+                <run>[federated.0g28w3u15fkhma17esbgp19w8hrz].[usr:Calculation_1388695002882050:qk]</run>
+                <run>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='size' value='1.6811602115631104' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{B264B45D-7494-4A10-8063-B3E4E6DB6DB5}' />
+    </worksheet>
+    <worksheet name='KPI5'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='v_basket_detail.csv (多个连接)' name='federated.0g28w3u15fkhma17esbgp19w8hrz' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0g28w3u15fkhma17esbgp19w8hrz'>
+            <column caption='SKU数' datatype='integer' default-format='N' name='[Calculation_1388695004647427]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTD([product_id])' />
+            </column>
+            <column caption='Product Id' datatype='integer' name='[product_id]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_1388695004647427]' derivation='User' name='[usr:Calculation_1388695004647427:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='pane'>
+            <format attr='border-color' value='#4e79a7' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.0g28w3u15fkhma17esbgp19w8hrz].[usr:Calculation_1388695004647427:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run>SKU数&#10;&lt;</run>
+                <run>[federated.0g28w3u15fkhma17esbgp19w8hrz].[usr:Calculation_1388695004647427:qk]</run>
+                <run>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='size' value='1.7251380681991577' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{E4B11897-20CC-4CC8-B6F9-EB9A6AC6DBA6}' />
+    </worksheet>
+    <worksheet name='RFM散点'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='v_basket_detail.csv (多个连接)' name='federated.0g28w3u15fkhma17esbgp19w8hrz' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0g28w3u15fkhma17esbgp19w8hrz'>
+            <column caption='R值' datatype='integer' name='[Calculation_1388695024824326]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([recency_days])' />
+            </column>
+            <column caption='M值' datatype='real' name='[Calculation_1388695024951303]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([monetary])' />
+            </column>
+            <column caption='散点-颜色' datatype='string' name='[Calculation_1388695025225737]' role='measure' type='nominal'>
+              <calculation class='tableau' formula='ATTR([cluster_name])' />
+            </column>
+            <column caption='散点-大小' datatype='integer' name='[Calculation_1388695025340426]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([frequency])' />
+            </column>
+            <column caption='散点-详细信息' datatype='string' name='[Calculation_1388695025422347]' role='measure' type='nominal'>
+              <calculation class='tableau' formula='ATTR([customer_id])' />
+            </column>
+            <column caption='Cluster Name' datatype='string' name='[cluster_name]' role='dimension' type='nominal' />
+            <column caption='Customer Id' datatype='string' name='[customer_id]' role='dimension' type='nominal' />
+            <column caption='Frequency' datatype='integer' name='[frequency]' role='measure' type='quantitative' />
+            <column caption='Monetary' datatype='real' name='[monetary]' role='measure' type='quantitative' />
+            <column-instance column='[cluster_name]' derivation='None' name='[none:cluster_name:nk]' pivot='key' type='nominal' />
+            <column caption='Recency Days' datatype='integer' name='[recency_days]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_1388695024824326]' derivation='User' name='[usr:Calculation_1388695024824326:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1388695024951303]' derivation='User' name='[usr:Calculation_1388695024951303:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1388695025225737]' derivation='User' name='[usr:Calculation_1388695025225737:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1388695025340426]' derivation='User' name='[usr:Calculation_1388695025340426:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1388695025422347]' derivation='User' name='[usr:Calculation_1388695025422347:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.0g28w3u15fkhma17esbgp19w8hrz].[usr:Calculation_1388695025340426:qk]' />
+              <color column='[federated.0g28w3u15fkhma17esbgp19w8hrz].[usr:Calculation_1388695025225737:nk]' />
+              <shape column='[federated.0g28w3u15fkhma17esbgp19w8hrz].[none:cluster_name:nk]' />
+              <lod column='[federated.0g28w3u15fkhma17esbgp19w8hrz].[usr:Calculation_1388695025422347:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0g28w3u15fkhma17esbgp19w8hrz].[usr:Calculation_1388695024951303:qk]</rows>
+        <cols>[federated.0g28w3u15fkhma17esbgp19w8hrz].[usr:Calculation_1388695024824326:qk]</cols>
+      </table>
+      <simple-id uuid='{F9815F6A-DE04-4C11-ACD0-4D79D6F2EF4C}' />
+    </worksheet>
+    <worksheet name='客户群排行'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ml_cluster_profile' name='federated.10ylmi8016p38j1c20n2j1campn3' />
+          </datasources>
+          <datasource-dependencies datasource='federated.10ylmi8016p38j1c20n2j1campn3'>
+            <column caption='Cluster Name' datatype='string' name='[cluster_name]' role='dimension' type='nominal' />
+            <column caption='Frequency' datatype='real' name='[frequency]' role='measure' type='quantitative' />
+            <column caption='Monetary' datatype='real' name='[monetary]' role='measure' type='quantitative' />
+            <column-instance column='[cluster_name]' derivation='None' name='[none:cluster_name:nk]' pivot='key' type='nominal' />
+            <column caption='Size' datatype='integer' name='[size]' role='measure' type='quantitative' />
+            <column caption='Size Pct' datatype='real' name='[size_pct]' role='measure' type='quantitative' />
+            <column-instance column='[frequency]' derivation='Sum' name='[sum:frequency:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[monetary]' derivation='Sum' name='[sum:monetary:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[size]' derivation='Sum' name='[sum:size:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[size_pct]' derivation='Sum' name='[sum:size_pct:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.10ylmi8016p38j1c20n2j1campn3].[sum:frequency:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.10ylmi8016p38j1c20n2j1campn3].[sum:monetary:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.10ylmi8016p38j1c20n2j1campn3].[sum:size:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.10ylmi8016p38j1c20n2j1campn3].[sum:size_pct:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.10ylmi8016p38j1c20n2j1campn3].[none:cluster_name:nk]</rows>
+        <cols>([federated.10ylmi8016p38j1c20n2j1campn3].[sum:frequency:qk] + ([federated.10ylmi8016p38j1c20n2j1campn3].[sum:monetary:qk] + ([federated.10ylmi8016p38j1c20n2j1campn3].[sum:size:qk] + [federated.10ylmi8016p38j1c20n2j1campn3].[sum:size_pct:qk])))</cols>
+      </table>
+      <simple-id uuid='{35EDF73E-B9A0-4A4E-B986-E53591A42B57}' />
+    </worksheet>
+    <worksheet name='月度趋势'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='v_basket_detail.csv (多个连接)' name='federated.0g28w3u15fkhma17esbgp19w8hrz' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0g28w3u15fkhma17esbgp19w8hrz'>
+            <column caption='总订单数' datatype='integer' default-format='N' name='[Calculation_1388695002624000]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTD([basket_id])' />
+            </column>
+            <column caption='精确日期' datatype='datetime' name='[Calculation_1388695020838917]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='DATETRUNC(&apos;month&apos;, [order_date])' />
+            </column>
+            <column caption='Basket Id' datatype='string' name='[basket_id]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_1388695020838917]' derivation='Month' name='[mn:Calculation_1388695020838917:ok]' pivot='key' type='ordinal' />
+            <column caption='Order Date' datatype='date' name='[order_date]' role='dimension' type='ordinal' />
+            <column caption='Sales Amount' datatype='real' default-format='C2052%' name='[sales_amount]' role='measure' type='quantitative' />
+            <column-instance column='[sales_amount]' derivation='Sum' name='[sum:sales_amount:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1388695002624000]' derivation='User' name='[usr:Calculation_1388695002624000:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0g28w3u15fkhma17esbgp19w8hrz].[usr:Calculation_1388695002624000:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.0g28w3u15fkhma17esbgp19w8hrz].[:Measure Names]' value='图例'>
+              <formatted-text>
+                <run>图例</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0g28w3u15fkhma17esbgp19w8hrz].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0g28w3u15fkhma17esbgp19w8hrz].[sum:sales_amount:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0g28w3u15fkhma17esbgp19w8hrz].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='5' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0g28w3u15fkhma17esbgp19w8hrz].[usr:Calculation_1388695002624000:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0g28w3u15fkhma17esbgp19w8hrz].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.0g28w3u15fkhma17esbgp19w8hrz].[sum:sales_amount:qk] + [federated.0g28w3u15fkhma17esbgp19w8hrz].[usr:Calculation_1388695002624000:qk])</rows>
+        <cols>[federated.0g28w3u15fkhma17esbgp19w8hrz].[mn:Calculation_1388695020838917:ok]</cols>
+      </table>
+      <simple-id uuid='{0FA08C3C-BE76-414D-A39E-18924B8B7BE3}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='仪表板 1'>
+      <style>
+        <style-rule element='table'>
+          <format attr='background-color' value='#00000000' />
+        </style-rule>
+        <style-rule element='dash-subtitle'>
+          <format attr='background-color' value='#00000000' />
+        </style-rule>
+      </style>
+      <size maxheight='768' maxwidth='1024' minheight='768' minwidth='1024' preset-index='2' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='30' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone friendly-name='KPI卡片' h='10807' id='3' layout-strategy-id='distribute-evenly' param='horz' type-v2='layout-flow' w='87500' x='8887' y='3906'>
+          <zone fixed-size='169' h='10808' id='11' is-fixed='true' name='KPI1' show-title='false' w='17578' x='8887' y='3906'>
+            <layout-cache type-h='cell' type-w='cell' />
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone fixed-size='180' h='10808' id='12' is-fixed='true' name='KPI2' show-title='false' w='17480' x='26465' y='3906'>
+            <layout-cache type-h='fixed' type-w='cell' />
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone fixed-size='178' h='10808' id='13' is-fixed='true' name='KPI3' show-title='false' w='17481' x='43945' y='3906'>
+            <layout-cache type-h='fixed' type-w='cell' />
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='10808' id='14' name='KPI4' show-title='false' w='17480' x='61426' y='3906'>
+            <layout-cache type-h='fixed' type-w='cell' />
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone fixed-size='139' h='10808' id='15' is-fixed='true' name='KPI5' show-title='false' w='17481' x='78906' y='3906'>
+            <layout-cache type-h='fixed' type-w='cell' />
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+        </zone>
+        <zone h='47266' id='16' name='月度趋势' w='43457' x='5176' y='16536' />
+        <zone fixed-size='60' h='7813' id='21' is-fixed='true' name='月度趋势' pane-specification-id='4' param='[federated.0g28w3u15fkhma17esbgp19w8hrz].[:Measure Names]' type-v2='color' w='10449' x='5176' y='20052' />
+        <zone h='47526' id='22' name='RFM散点' w='33301' x='50781' y='16406' />
+        <zone h='15495' id='28' name='RFM散点' pane-specification-id='2' param='[federated.0g28w3u15fkhma17esbgp19w8hrz].[usr:Calculation_1388695025340426:qk]' type-v2='size' w='13867' x='85840' y='47917' />
+        <zone friendly-name='分群名称' h='8203' id='27' name='RFM散点' pane-specification-id='2' param='[federated.0g28w3u15fkhma17esbgp19w8hrz].[none:cluster_name:nk]' type-v2='shape' w='13867' x='85840' y='33724' />
+        <zone h='9505' id='26' name='RFM散点' pane-specification-id='2' param='[federated.0g28w3u15fkhma17esbgp19w8hrz].[usr:Calculation_1388695025225737:nk]' type-v2='color' w='13867' x='85938' y='19792' />
+        <zone h='25000' id='29' name='客户群排行' w='92480' x='5371' y='67839' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1500' minheight='1500' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='32' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97916' id='31' param='vert' type-v2='layout-flow' w='98438' x='781' y='1042'>
+                <zone fixed-size='75' h='10808' id='11' is-fixed='true' name='KPI1' show-title='false' w='17578' x='8887' y='3906'>
+                  <layout-cache type-h='cell' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='75' h='10808' id='12' is-fixed='true' name='KPI2' show-title='false' w='17480' x='26465' y='3906'>
+                  <layout-cache type-h='fixed' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='75' h='10808' id='13' is-fixed='true' name='KPI3' show-title='false' w='17481' x='43945' y='3906'>
+                  <layout-cache type-h='fixed' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='75' h='10808' id='14' is-fixed='true' name='KPI4' show-title='false' w='17480' x='61426' y='3906'>
+                  <layout-cache type-h='fixed' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='75' h='10808' id='15' is-fixed='true' name='KPI5' show-title='false' w='17481' x='78906' y='3906'>
+                  <layout-cache type-h='fixed' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='47526' id='22' is-fixed='true' name='RFM散点' w='33301' x='50781' y='16406'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='15495' id='28' name='RFM散点' pane-specification-id='2' param='[federated.0g28w3u15fkhma17esbgp19w8hrz].[usr:Calculation_1388695025340426:qk]' type-v2='size' w='13867' x='85840' y='47917'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone friendly-name='分群名称' h='8203' id='27' name='RFM散点' pane-specification-id='2' param='[federated.0g28w3u15fkhma17esbgp19w8hrz].[none:cluster_name:nk]' type-v2='shape' w='13867' x='85840' y='33724'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='9505' id='26' name='RFM散点' pane-specification-id='2' param='[federated.0g28w3u15fkhma17esbgp19w8hrz].[usr:Calculation_1388695025225737:nk]' type-v2='color' w='13867' x='85938' y='19792'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='47266' id='16' is-fixed='true' name='月度趋势' w='43457' x='5176' y='16536'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='60' h='7813' id='21' name='月度趋势' pane-specification-id='4' param='[federated.0g28w3u15fkhma17esbgp19w8hrz].[:Measure Names]' type-v2='color' w='10449' x='5176' y='20052'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='192' h='25000' id='29' is-fixed='true' name='客户群排行' w='92480' x='5371' y='67839'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{10FBB179-0254-48F9-9AC3-1334057570A0}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='51'>
+    <window class='worksheet' name='KPI1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <floating-toolbar-visibility value='1' />
+      </viewpoint>
+      <simple-id uuid='{E5A1E251-4A00-4A6E-BAF2-5494409F7EE1}' />
+    </window>
+    <window class='worksheet' name='KPI2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <selection-collection>
+          <tuple-selection>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0g28w3u15fkhma17esbgp19w8hrz].[usr:Calculation_1388695002624000:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>27618</value>
+              </tuple>
+            </tuple-reference>
+          </tuple-selection>
+        </selection-collection>
+      </viewpoint>
+      <simple-id uuid='{7BABAD2F-06E3-4EE3-844B-4FBB0CD99CF3}' />
+    </window>
+    <window class='worksheet' name='KPI3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{3ED1C13D-5C33-466A-BDED-D48A82E3AB1D}' />
+    </window>
+    <window class='worksheet' name='KPI4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{484FAC0E-CD8B-4FD9-8EB4-62A536831B4E}' />
+    </window>
+    <window class='worksheet' name='KPI5'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{6DF5A4F8-C364-44E9-80E7-9A313DBC38D0}' />
+    </window>
+    <window class='dashboard' maximized='true' name='仪表板 1'>
+      <viewpoints>
+        <viewpoint name='KPI1'>
+          <zoom type='entire-view' />
+          <floating-toolbar-visibility value='1' />
+        </viewpoint>
+        <viewpoint name='KPI2'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='KPI3'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='KPI4'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='KPI5'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='RFM散点'>
+          <zoom type='entire-view' />
+          <highlight>
+            <color-one-way>
+              <field>[federated.0g28w3u15fkhma17esbgp19w8hrz].[usr:Calculation_1388695025225737:nk]</field>
+            </color-one-way>
+          </highlight>
+        </viewpoint>
+        <viewpoint name='客户群排行'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='月度趋势'>
+          <zoom type='entire-view' />
+          <highlight field='[federated.0g28w3u15fkhma17esbgp19w8hrz].[:Measure Names]'>
+            <bucket-selection />
+          </highlight>
+        </viewpoint>
+      </viewpoints>
+      <active id='30' />
+      <simple-id uuid='{39B0F85D-70B3-496C-9BB6-21C67E380011}' />
+    </window>
+    <window class='worksheet' name='月度趋势'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='4' param='[federated.0g28w3u15fkhma17esbgp19w8hrz].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0g28w3u15fkhma17esbgp19w8hrz].[:Measure Names]</field>
+            <field>[federated.0g28w3u15fkhma17esbgp19w8hrz].[yr:Calculation_1388695020838917:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{5296BF18-D0F2-4554-8BE4-6184E5C77CE6}' />
+    </window>
+    <window class='worksheet' name='RFM散点'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.0g28w3u15fkhma17esbgp19w8hrz].[usr:Calculation_1388695025225737:nk]' type='color' />
+            <card pane-specification-id='2' param='[federated.0g28w3u15fkhma17esbgp19w8hrz].[none:cluster_name:nk]' type='shape' />
+            <card pane-specification-id='2' param='[federated.0g28w3u15fkhma17esbgp19w8hrz].[usr:Calculation_1388695025340426:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0g28w3u15fkhma17esbgp19w8hrz].[none:cluster_name:nk]</field>
+            <field>[federated.0g28w3u15fkhma17esbgp19w8hrz].[usr:Calculation_1388695025225737:nk]</field>
+            <field>[federated.0g28w3u15fkhma17esbgp19w8hrz].[usr:Calculation_1388695025422347:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{BC655F09-675E-4388-BE37-D4117B5B5CF4}' />
+    </window>
+    <window class='worksheet' name='客户群排行'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0g28w3u15fkhma17esbgp19w8hrz].[none:cluster_name (ml_cluster_profile.csv):nk]</field>
+            <field>[federated.10ylmi8016p38j1c20n2j1campn3].[none:cluster_name:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{9DF49051-4DCA-4C87-BB76-ED8A915C6900}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='KPI1' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAACK0lEQVR4nO3TMQ2EQAAAQfhggIaEEnrE4wERuOFlXLEzCrbZ+X7e79jXCYqWY1+n69xG
+      d8AQv9EBMJIBSDMAaQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0A5BmANIMQJoBSDMA
+      aQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0A5Bm
+      ANIMQJoBSDMAaQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0A5BmANIMQJoBSDMAaQYg
+      zQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0A5BmANIM
+      QJoBSDMAaQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCk
+      GYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0A5BmANIMQJoB
+      SDMAaQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0
+      A5BmANIMQJoBSDMAaQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0A5BmANIMQJoBSDMA
+      aQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0A5Bm
+      ANIMQJoBSDMAaQYgzQCkGYC0P826BcmkwmL0AAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='KPI2' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAACK0lEQVR4nO3TMRECMQAAwcBgIE0m1RfvGisowQ3ISHG7Cq65x/vz/e01BxS99prjvtbp
+      DjjieToATjIAaQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0A5BmANIMQJoBSDMAaQYg
+      zQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0A5BmANIM
+      QJoBSDMAaQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCk
+      GYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0A5BmANIMQJoB
+      SDMAaQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0
+      A5BmANIMQJoBSDMAaQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0A5BmANIMQJoBSDMA
+      aQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0A5Bm
+      ANIMQJoBSDMAaQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0A5BmANIMQJoBSDMAaQYg
+      zQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0A5BmANIM
+      QJoBSDMAaQYgzQCkGYA0A5D2B59CBYAGNnnSAAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='KPI3' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAACK0lEQVR4nO3TMQ2EQAAAQfhggIaEEnrE4wERuOFlXLEzCrbZ+X7e79jXCYqWY1+n69xG
+      d8AQv9EBMJIBSDMAaQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0A5BmANIMQJoBSDMA
+      aQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0A5Bm
+      ANIMQJoBSDMAaQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0A5BmANIMQJoBSDMAaQYg
+      zQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0A5BmANIM
+      QJoBSDMAaQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCk
+      GYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0A5BmANIMQJoB
+      SDMAaQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0
+      A5BmANIMQJoBSDMAaQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0A5BmANIMQJoBSDMA
+      aQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0A5Bm
+      ANIMQJoBSDMAaQYgzQCkGYC0P826BcmkwmL0AAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='KPI4' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAACK0lEQVR4nO3TMQ2EQAAAQfhggIaEEnrE4wERuOFlXLEzCrbZ+X7e79jXCYqWY1+n69xG
+      d8AQv9EBMJIBSDMAaQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0A5BmANIMQJoBSDMA
+      aQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0A5Bm
+      ANIMQJoBSDMAaQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0A5BmANIMQJoBSDMAaQYg
+      zQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0A5BmANIM
+      QJoBSDMAaQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCk
+      GYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0A5BmANIMQJoB
+      SDMAaQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0
+      A5BmANIMQJoBSDMAaQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0A5BmANIMQJoBSDMA
+      aQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0A5Bm
+      ANIMQJoBSDMAaQYgzQCkGYC0P826BcmkwmL0AAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='KPI5' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAACK0lEQVR4nO3TMQ2EQAAAQfhggIaEEnrE4wERuOFlXLEzCrbZ+X7e79jXCYqWY1+n69xG
+      d8AQv9EBMJIBSDMAaQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0A5BmANIMQJoBSDMA
+      aQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0A5Bm
+      ANIMQJoBSDMAaQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0A5BmANIMQJoBSDMAaQYg
+      zQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0A5BmANIM
+      QJoBSDMAaQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCk
+      GYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0A5BmANIMQJoB
+      SDMAaQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0
+      A5BmANIMQJoBSDMAaQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0A5BmANIMQJoBSDMA
+      aQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0A5Bm
+      ANIMQJoBSDMAaQYgzQCkGYC0P826BcmkwmL0AAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='RFM散点' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='仪表板 1' width='192'>
+      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
+      mAIwaWr+P/1n3FPzEgDeAAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='客户群排行' width='192'>
+      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
+      TkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='月度趋势' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
